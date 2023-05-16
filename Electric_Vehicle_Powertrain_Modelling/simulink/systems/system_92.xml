@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[30, 30, 1010, 750]</P>
+  <P Name="ZoomFactor">92</P>
+  <Block BlockType="Reference" Name="DC Motor" SID="8">
+    <PortCounts lconn="2" rconn="2"/>
+    <P Name="Position">[135, 120, 215, 170]</P>
+    <P Name="ZOrder">14</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibraryVersion">10006000.3</P>
+    <P Name="SourceBlock">ee_lib/Electromechanical/Brushed Motors/DC Motor</P>
+    <P Name="SourceType">DC Motor</P>
+    <InstanceData>
+      <P Name="LogSimulationData">off</P>
+      <P Name="SourceFile">ee.electromech.brushed.dc_motor</P>
+      <P Name="InternalSimscapePortConfiguration">{&quot;Bottom&quot;:[],&quot;Left&quot;:[{&quot;id&quot;:&quot;p&quot;,&quot;label&quot;:&quot;+&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;},{&quot;id&quot;:&quot;R&quot;,&quot;label&quot;:&quot;R&quot;,&quot;type&quot;:&quot;foundation.mechanical.rotational.rotational&quot;}],&quot;Right&quot;:[{&quot;id&quot;:&quot;n&quot;,&quot;label&quot;:&quot;-&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;},{&quot;id&quot;:&quot;C&quot;,&quot;label&quot;:&quot;C&quot;,&quot;type&quot;:&quot;foundation.mechanical.rotational.rotational&quot;}],&quot;Top&quot;:[]}</P>
+      <P Name="SscBlockScalableBuild">off</P>
+      <P Name="ComponentPath">ee.electromech.brushed.dc_motor</P>
+      <P Name="ComponentVariants">[&quot;ee.electromech.brushed.dc_motor&quot;,&quot;ee.electromech.brushed.dc_motor_thermal&quot;]</P>
+      <P Name="ComponentVariantNames">[&quot;physmod:ee:library:comments:electromech:brushed:dc_motor_sscx:noThermalPort&quot;,&quot;physmod:ee:library:comments:electromech:brushed:dc_motor_sscx:showThermalPort&quot;]</P>
+      <P Name="ClassName">Simscape variant</P>
+      <P Name="SchemaVersion">1</P>
+      <P Name="field_option">ee.enum.field_option.pm</P>
+      <P Name="field_option_unit">1</P>
+      <P Name="field_option_conf">compiletime</P>
+      <P Name="Rf">100</P>
+      <P Name="Rf_unit">Ohm</P>
+      <P Name="Rf_conf">compiletime</P>
+      <P Name="Lf">1</P>
+      <P Name="Lf_unit">H</P>
+      <P Name="Lf_conf">compiletime</P>
+      <P Name="Laf">0.15</P>
+      <P Name="Laf_unit">H</P>
+      <P Name="Laf_conf">compiletime</P>
+      <P Name="If0">0</P>
+      <P Name="If0_unit">A</P>
+      <P Name="If0_conf">compiletime</P>
+      <P Name="parameterization">ee.enum.dcparam_option.load_speed</P>
+      <P Name="parameterization_unit">1</P>
+      <P Name="parameterization_conf">compiletime</P>
+      <P Name="Ra">3.9</P>
+      <P Name="Ra_unit">Ohm</P>
+      <P Name="Ra_conf">compiletime</P>
+      <P Name="La">12e-6</P>
+      <P Name="La_unit">H</P>
+      <P Name="La_conf">compiletime</P>
+      <P Name="emf_or_torque">ee.enum.emf_or_torque.kv</P>
+      <P Name="emf_or_torque_unit">1</P>
+      <P Name="emf_or_torque_conf">compiletime</P>
+      <P Name="Kv">0.072e-3</P>
+      <P Name="Kv_unit">V/rpm</P>
+      <P Name="Kv_conf">compiletime</P>
+      <P Name="Ki">6.876e-4</P>
+      <P Name="Ki_unit">N*m/A</P>
+      <P Name="Ki_conf">compiletime</P>
+      <P Name="T_stall">0.24e-3</P>
+      <P Name="T_stall_unit">N*m</P>
+      <P Name="T_stall_conf">compiletime</P>
+      <P Name="w_max">10000</P>
+      <P Name="w_max_unit">rpm</P>
+      <P Name="w_max_conf">compiletime</P>
+      <P Name="w_rated">3796</P>
+      <P Name="w_rated_unit">rpm</P>
+      <P Name="w_rated_conf">compiletime</P>
+      <P Name="P_rated">84</P>
+      <P Name="P_rated_unit">kW</P>
+      <P Name="P_rated_conf">compiletime</P>
+      <P Name="V_rated">320</P>
+      <P Name="V_rated_unit">V</P>
+      <P Name="V_rated_conf">compiletime</P>
+      <P Name="lam_param">ee.enum.lam_param.damping</P>
+      <P Name="lam_param_unit">1</P>
+      <P Name="lam_param_conf">compiletime</P>
+      <P Name="i_noload">0</P>
+      <P Name="i_noload_unit">A</P>
+      <P Name="i_noload_conf">compiletime</P>
+      <P Name="V_i_noload">1.5</P>
+      <P Name="V_i_noload_unit">V</P>
+      <P Name="V_i_noload_conf">compiletime</P>
+      <P Name="J">0.01</P>
+      <P Name="J_unit">cm^2*g</P>
+      <P Name="J_conf">compiletime</P>
+      <P Name="lam">0</P>
+      <P Name="lam_unit">N*m*s/rad</P>
+      <P Name="lam_conf">compiletime</P>
+      <P Name="speed0">0</P>
+      <P Name="speed0_unit">rpm</P>
+      <P Name="speed0_conf">compiletime</P>
+      <P Name="enable_fault_armature">simscape.enum.onoff.off</P>
+      <P Name="enable_fault_armature_unit">1</P>
+      <P Name="enable_fault_armature_conf">compiletime</P>
+      <P Name="rev_faulted">1 / 3</P>
+      <P Name="rev_faulted_unit">1</P>
+      <P Name="rev_faulted_conf">compiletime</P>
+      <P Name="G_faulted_armature">1e-5</P>
+      <P Name="G_faulted_armature_unit">S</P>
+      <P Name="G_faulted_armature_conf">compiletime</P>
+      <P Name="fault_trigger_armature">ee.enum.faults.faultTrigger.temporal</P>
+      <P Name="fault_trigger_armature_unit">1</P>
+      <P Name="fault_trigger_armature_conf">compiletime</P>
+      <P Name="t_fault_armature">1</P>
+      <P Name="t_fault_armature_unit">s</P>
+      <P Name="t_fault_armature_conf">compiletime</P>
+      <P Name="max_permissible_current_armature">inf</P>
+      <P Name="max_permissible_current_armature_unit">A</P>
+      <P Name="max_permissible_current_armature_conf">compiletime</P>
+      <P Name="t_fail_on_current_armature">1</P>
+      <P Name="t_fail_on_current_armature_unit">s</P>
+      <P Name="t_fail_on_current_armature_conf">compiletime</P>
+      <P Name="enable_fault_field">simscape.enum.onoff.off</P>
+      <P Name="enable_fault_field_unit">1</P>
+      <P Name="enable_fault_field_conf">compiletime</P>
+      <P Name="G_faulted_field">1e-5</P>
+      <P Name="G_faulted_field_unit">S</P>
+      <P Name="G_faulted_field_conf">compiletime</P>
+      <P Name="fault_trigger_field">ee.enum.faults.faultTrigger.temporal</P>
+      <P Name="fault_trigger_field_unit">1</P>
+      <P Name="fault_trigger_field_conf">compiletime</P>
+      <P Name="t_fault_field">1</P>
+      <P Name="t_fault_field_unit">s</P>
+      <P Name="t_fault_field_conf">compiletime</P>
+      <P Name="max_permissible_current_field">inf</P>
+      <P Name="max_permissible_current_field_unit">A</P>
+      <P Name="max_permissible_current_field_conf">compiletime</P>
+      <P Name="t_fail_on_current_field">1</P>
+      <P Name="t_fail_on_current_field_unit">s</P>
+      <P Name="t_fail_on_current_field_conf">compiletime</P>
+      <P Name="fault_action">simscape.enum.assert.action.none</P>
+      <P Name="fault_action_unit">1</P>
+      <P Name="fault_action_conf">compiletime</P>
+      <P Name="alpha">3.93e-3</P>
+      <P Name="alpha_unit">1/K</P>
+      <P Name="alpha_conf">compiletime</P>
+      <P Name="Tmeas">25</P>
+      <P Name="Tmeas_unit">degC</P>
+      <P Name="Tmeas_conf">compiletime</P>
+      <P Name="thermal_mass">100</P>
+      <P Name="thermal_mass_unit">J/K</P>
+      <P Name="thermal_mass_conf">compiletime</P>
+      <P Name="initial_temperature">25</P>
+      <P Name="initial_temperature_unit">degC</P>
+      <P Name="initial_temperature_conf">compiletime</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mechanical&#xA;Rotational Reference" SID="83">
+    <PortCounts lconn="1"/>
+    <P Name="Position">[185, 195, 205, 215]</P>
+    <P Name="ZOrder">26208</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibraryVersion">10006000.1</P>
+    <P Name="SourceBlock">fl_lib/Mechanical/Rotational Elements/Mechanical
+Rotational Reference</P>
+    <P Name="SourceType">Mechanical
+Rotational Reference</P>
+    <InstanceData>
+      <P Name="LogSimulationData">off</P>
+      <P Name="SourceFile">foundation.mechanical.rotational.reference</P>
+      <P Name="InternalSimscapePortConfiguration">{&quot;Bottom&quot;:[],&quot;Left&quot;:[{&quot;id&quot;:&quot;W&quot;,&quot;label&quot;:&quot;&quot;,&quot;type&quot;:&quot;foundation.mechanical.rotational.rotational&quot;}],&quot;Right&quot;:[],&quot;Top&quot;:[]}</P>
+      <P Name="SscBlockScalableBuild">off</P>
+      <P Name="ComponentPath">foundation.mechanical.rotational.reference</P>
+      <P Name="ComponentVariants">[&quot;foundation.mechanical.rotational.reference&quot;]</P>
+      <P Name="ComponentVariantNames">[&quot;reference&quot;]</P>
+      <P Name="ClassName">reference</P>
+      <P Name="SchemaVersion">1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Conn1" SID="93">
+    <P Name="Position">[20, 23, 50, 37]</P>
+    <P Name="ZOrder">26209</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Conn2" SID="94">
+    <P Name="Position">[555, 88, 585, 102]</P>
+    <P Name="ZOrder">26210</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Port">2</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Conn3" SID="95">
+    <P Name="Position">[180, 188, 210, 202]</P>
+    <P Name="ZOrder">26211</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Port">3</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Line LineType="Connection">
+    <P Name="ZOrder">290</P>
+    <P Name="Src">8#lconn:1</P>
+    <P Name="Points">[0, -75]</P>
+    <P Name="Dst">93#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">291</P>
+    <P Name="Src">94#rconn:1</P>
+    <P Name="Points">[-345, 0]</P>
+    <P Name="Dst">8#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">218</P>
+    <P Name="Src">83#lconn:1</P>
+    <P Name="Dst">8#rconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">292</P>
+    <P Name="Src">95#rconn:1</P>
+    <P Name="Points">[-10, 0]</P>
+    <P Name="Dst">8#rconn:1</P>
+  </Line>
+</System>

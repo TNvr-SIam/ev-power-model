@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GraphicalInterface>
+  <P Name="NumRootInports">0</P>
+  <P Name="NumRootOutports">0</P>
+  <P Name="ParameterArgumentNames"/>
+  <P Name="NumModelReferences">0</P>
+  <P Name="NumTestPointedSignals">0</P>
+  <P Name="NumProvidedFunctions">0</P>
+  <P Name="NumRequiredFunctions">0</P>
+  <P Name="NumResetEvents">0</P>
+  <P Name="HasInitializeEvent">0</P>
+  <P Name="HasTerminateEvent">0</P>
+  <P Name="PreCompExecutionDomainType">Unset</P>
+  <P Name="UseModelRefSolver">0</P>
+  <P Name="SolverName">VariableStepAuto</P>
+  <P Name="IsExportFunctionModel">0</P>
+  <P Name="SimulinkSubDomainType">Simulink</P>
+  <P Name="NumParameterArguments">0</P>
+  <P Name="NumExternalFileReferences">31</P>
+  <ExternalFileReference>
+    <P Name="Reference">batteryecm_lib/Battery</P>
+    <P Name="Path">$bdroot/Battery/Battery</P>
+    <P Name="SID">51</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Electrical/Electrical Sources/Controlled Current
+Source</P>
+    <P Name="Path">$bdroot/Battery/Controlled Current Source</P>
+    <P Name="SID">49</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Electrical/Electrical Elements/Electrical Reference</P>
+    <P Name="Path">$bdroot/Battery/Electrical Reference1</P>
+    <P Name="SID">48</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">nesl_utility/PS-Simulink
+Converter</P>
+    <P Name="Path">$bdroot/Battery/PS-Simulink Converter1</P>
+    <P Name="SID">62</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Electrical/Electrical Sensors/Current Sensor</P>
+    <P Name="Path">$bdroot/Current Sensor</P>
+    <P Name="SID">35</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">drivingcycle_lib/Driving Cycle</P>
+    <P Name="Path">$bdroot/Driving Cycle</P>
+    <P Name="SID">29</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">autolibshared/Longitudinal Driver</P>
+    <P Name="Path">$bdroot/Longitudinal Driver</P>
+    <P Name="SID">24</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">ee_lib/Electromechanical/Brushed Motors/DC Motor</P>
+    <P Name="Path">$bdroot/Motor/DC Motor</P>
+    <P Name="SID">8</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Mechanical/Rotational Elements/Mechanical
+Rotational Reference</P>
+    <P Name="Path">$bdroot/Motor/Mechanical Rotational Reference</P>
+    <P Name="SID">83</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">ee_lib/Integrated Circuits/Controlled PWM
+Voltage</P>
+    <P Name="Path">$bdroot/Motor Control/Controlled PWM Voltage</P>
+    <P Name="SID">31</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Electrical/Electrical Sources/Controlled Voltage
+Source</P>
+    <P Name="Path">$bdroot/Motor Control/Controlled Voltage Source</P>
+    <P Name="SID">43</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Electrical/Electrical Sources/Controlled Voltage
+Source</P>
+    <P Name="Path">$bdroot/Motor Control/Controlled Voltage Source1</P>
+    <P Name="SID">44</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Electrical/Electrical Elements/Electrical Reference</P>
+    <P Name="Path">$bdroot/Motor Control/Electrical Reference</P>
+    <P Name="SID">47</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">ee_lib/Semiconductors &amp;
+Converters/Converters/H-Bridge</P>
+    <P Name="Path">$bdroot/Motor Control/H-Bridge</P>
+    <P Name="SID">32</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">nesl_utility/Solver
+Configuration</P>
+    <P Name="Path">$bdroot/Motor Control/Solver Configuration</P>
+    <P Name="SID">84</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">nesl_utility/PS-Simulink
+Converter</P>
+    <P Name="Path">$bdroot/PS-Simulink Converter</P>
+    <P Name="SID">52</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">nesl_utility/Simulink-PS
+Converter</P>
+    <P Name="Path">$bdroot/Simulink-PS Converter</P>
+    <P Name="SID">45</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">nesl_utility/Simulink-PS
+Converter</P>
+    <P Name="Path">$bdroot/Simulink-PS Converter1</P>
+    <P Name="SID">46</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Mechanical/Rotational Elements/Inertia</P>
+    <P Name="Path">$bdroot/Vehicle Body/Inertia</P>
+    <P Name="SID">21</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Physical Signals/Sources/PS Constant</P>
+    <P Name="Path">$bdroot/Vehicle Body/PS Constant</P>
+    <P Name="SID">22</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Physical Signals/Sources/PS Constant</P>
+    <P Name="Path">$bdroot/Vehicle Body/PS Constant1</P>
+    <P Name="SID">23</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Physical Signals/Sinks/PS Terminator</P>
+    <P Name="Path">$bdroot/Vehicle Body/PS Terminator</P>
+    <P Name="SID">37</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Physical Signals/Sinks/PS Terminator</P>
+    <P Name="Path">$bdroot/Vehicle Body/PS Terminator1</P>
+    <P Name="SID">38</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Physical Signals/Sinks/PS Terminator</P>
+    <P Name="Path">$bdroot/Vehicle Body/PS Terminator2</P>
+    <P Name="SID">39</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">fl_lib/Physical Signals/Sinks/PS Terminator</P>
+    <P Name="Path">$bdroot/Vehicle Body/PS Terminator3</P>
+    <P Name="SID">40</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">sdl_lib/Gears/Simple Gear</P>
+    <P Name="Path">$bdroot/Vehicle Body/Simple Gear</P>
+    <P Name="SID">7</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">sdl_lib/Tires &amp; Vehicles/Tire (Magic Formula)</P>
+    <P Name="Path">$bdroot/Vehicle Body/Tire (Magic Formula)</P>
+    <P Name="SID">2</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">sdl_lib/Tires &amp; Vehicles/Tire (Magic Formula)</P>
+    <P Name="Path">$bdroot/Vehicle Body/Tire (Magic Formula)1</P>
+    <P Name="SID">3</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">sdl_lib/Tires &amp; Vehicles/Tire (Magic Formula)</P>
+    <P Name="Path">$bdroot/Vehicle Body/Tire (Magic Formula)2</P>
+    <P Name="SID">4</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">sdl_lib/Tires &amp; Vehicles/Tire (Magic Formula)</P>
+    <P Name="Path">$bdroot/Vehicle Body/Tire (Magic Formula)3</P>
+    <P Name="SID">5</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">sdl_lib/Tires &amp; Vehicles/Vehicle Body</P>
+    <P Name="Path">$bdroot/Vehicle Body/Vehicle Body</P>
+    <P Name="SID">1</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <P Name="OrderedModelArguments">1</P>
+</GraphicalInterface>

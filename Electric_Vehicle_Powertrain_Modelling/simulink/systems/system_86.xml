@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[30, 30, 1010, 750]</P>
+  <P Name="ZoomFactor">92</P>
+  <Block BlockType="Reference" Name="Battery" SID="51">
+    <PortCounts lconn="1" rconn="1"/>
+    <P Name="Position">[195, 130, 235, 170]</P>
+    <P Name="ZOrder">26185</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibraryVersion">10006000.1</P>
+    <P Name="SourceBlock">batteryecm_lib/Battery</P>
+    <P Name="SourceType">Battery</P>
+    <InstanceData>
+      <P Name="LogSimulationData">off</P>
+      <P Name="SourceFile">batteryecm.battery</P>
+      <P Name="InternalSimscapePortConfiguration">{&quot;Bottom&quot;:[],&quot;Left&quot;:[{&quot;id&quot;:&quot;p&quot;,&quot;label&quot;:&quot;+&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Right&quot;:[{&quot;id&quot;:&quot;n&quot;,&quot;label&quot;:&quot;-&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Top&quot;:[]}</P>
+      <P Name="SscBlockScalableBuild">off</P>
+      <P Name="ComponentPath">batteryecm.battery</P>
+      <P Name="ComponentVariants">[&quot;batteryecm.battery&quot;,&quot;batteryecm.battery_thermal&quot;,&quot;batteryecm.battery_instrumented&quot;,&quot;batteryecm.battery_thermal_instrumented&quot;]</P>
+      <P Name="ComponentVariantNames">[&quot;physmod:battery:shared_library:comments:battery_sscx:uninstrumentedNoThermalPort&quot;,&quot;physmod:battery:shared_library:comments:battery_sscx:uninstrumentedShowThermalPort&quot;,&quot;physmod:battery:shared_library:comments:battery_sscx:instrumentedNoThermalPort&quot;,&quot;physmod:battery:shared_library:comments:battery_sscx:instrumentedShowThermalPort&quot;]</P>
+      <P Name="ClassName">Simscape variant</P>
+      <P Name="SchemaVersion">1</P>
+      <P Name="Vnom">320</P>
+      <P Name="Vnom_unit">V</P>
+      <P Name="Vnom_conf">compiletime</P>
+      <P Name="prm_dir">simscape.enum.battery.prm_dir.disabled</P>
+      <P Name="prm_dir_unit">1</P>
+      <P Name="prm_dir_conf">compiletime</P>
+      <P Name="R1_dis">2</P>
+      <P Name="R1_dis_unit">Ohm</P>
+      <P Name="R1_dis_conf">compiletime</P>
+      <P Name="R1_ch">2</P>
+      <P Name="R1_ch_unit">Ohm</P>
+      <P Name="R1_ch_conf">compiletime</P>
+      <P Name="R1">0.02</P>
+      <P Name="R1_unit">Ohm</P>
+      <P Name="R1_conf">compiletime</P>
+      <P Name="prm_AH">simscape.enum.battery.prm_AH.finite</P>
+      <P Name="prm_AH_unit">1</P>
+      <P Name="prm_AH_conf">compiletime</P>
+      <P Name="AH">94</P>
+      <P Name="AH_unit">A*hr</P>
+      <P Name="AH_conf">compiletime</P>
+      <P Name="V1">300</P>
+      <P Name="V1_unit">V</P>
+      <P Name="V1_conf">compiletime</P>
+      <P Name="AH1">10</P>
+      <P Name="AH1_unit">A*hr</P>
+      <P Name="AH1_conf">compiletime</P>
+      <P Name="prm_R2">simscape.enum.battery.prm_R2.disabled</P>
+      <P Name="prm_R2_unit">1</P>
+      <P Name="prm_R2_conf">compiletime</P>
+      <P Name="R2">2000</P>
+      <P Name="R2_unit">Ohm</P>
+      <P Name="R2_conf">compiletime</P>
+      <P Name="prm_dyn">simscape.enum.battery.prm_dyn.off</P>
+      <P Name="prm_dyn_unit">1</P>
+      <P Name="prm_dyn_conf">compiletime</P>
+      <P Name="Rp1">0.005</P>
+      <P Name="Rp1_unit">Ohm</P>
+      <P Name="Rp1_conf">compiletime</P>
+      <P Name="tau1">30</P>
+      <P Name="tau1_unit">s</P>
+      <P Name="tau1_conf">compiletime</P>
+      <P Name="Rp2">0.005</P>
+      <P Name="Rp2_unit">Ohm</P>
+      <P Name="Rp2_conf">compiletime</P>
+      <P Name="tau2">30</P>
+      <P Name="tau2_unit">s</P>
+      <P Name="tau2_conf">compiletime</P>
+      <P Name="Rp3">0.005</P>
+      <P Name="Rp3_unit">Ohm</P>
+      <P Name="Rp3_conf">compiletime</P>
+      <P Name="tau3">30</P>
+      <P Name="tau3_unit">s</P>
+      <P Name="tau3_conf">compiletime</P>
+      <P Name="Rp4">0.005</P>
+      <P Name="Rp4_unit">Ohm</P>
+      <P Name="Rp4_conf">compiletime</P>
+      <P Name="tau4">30</P>
+      <P Name="tau4_unit">s</P>
+      <P Name="tau4_conf">compiletime</P>
+      <P Name="Rp5">0.005</P>
+      <P Name="Rp5_unit">Ohm</P>
+      <P Name="Rp5_conf">compiletime</P>
+      <P Name="tau5">30</P>
+      <P Name="tau5_unit">s</P>
+      <P Name="tau5_conf">compiletime</P>
+      <P Name="prm_fade">simscape.enum.battery.prm_fade.disabled</P>
+      <P Name="prm_fade_unit">1</P>
+      <P Name="prm_fade_conf">compiletime</P>
+      <P Name="N_fade">100</P>
+      <P Name="N_fade_unit">1</P>
+      <P Name="N_fade_conf">compiletime</P>
+      <P Name="AH_fade">45</P>
+      <P Name="AH_fade_unit">A*hr</P>
+      <P Name="AH_fade_conf">compiletime</P>
+      <P Name="R1_fade">2.02</P>
+      <P Name="R1_fade_unit">Ohm</P>
+      <P Name="R1_fade_conf">compiletime</P>
+      <P Name="R1_ch_fade">2.02</P>
+      <P Name="R1_ch_fade_unit">Ohm</P>
+      <P Name="R1_ch_fade_conf">compiletime</P>
+      <P Name="V1_fade">10.35</P>
+      <P Name="V1_fade_unit">V</P>
+      <P Name="V1_fade_conf">compiletime</P>
+      <P Name="prm_age">simscape.enum.battery.prm_age.disabled</P>
+      <P Name="prm_age_unit">1</P>
+      <P Name="prm_age_conf">compiletime</P>
+      <P Name="prm_age_OCV">simscape.enum.battery.prm_age_OCV.OCV</P>
+      <P Name="prm_age_OCV_unit">1</P>
+      <P Name="prm_age_OCV_conf">compiletime</P>
+      <P Name="OCV_age">0.9</P>
+      <P Name="OCV_age_unit">1</P>
+      <P Name="OCV_age_conf">compiletime</P>
+      <P Name="SOC_age">60</P>
+      <P Name="SOC_age_unit">1</P>
+      <P Name="SOC_age_conf">compiletime</P>
+      <P Name="delta_time_age_vec">[0]</P>
+      <P Name="delta_time_age_vec_unit">d</P>
+      <P Name="delta_time_age_vec_conf">compiletime</P>
+      <P Name="temperature_age_vec">[273]</P>
+      <P Name="temperature_age_vec_unit">K</P>
+      <P Name="temperature_age_vec_conf">compiletime</P>
+      <P Name="OCV_scaling_age">2.2134e6</P>
+      <P Name="OCV_scaling_age_unit">1</P>
+      <P Name="OCV_scaling_age_conf">compiletime</P>
+      <P Name="OCV_offset_age">1.632e6</P>
+      <P Name="OCV_offset_age_unit">1</P>
+      <P Name="OCV_offset_age_conf">compiletime</P>
+      <P Name="temp_exp_age">0.515833569</P>
+      <P Name="temp_exp_age_unit">V</P>
+      <P Name="temp_exp_age_conf">compiletime</P>
+      <P Name="t_exp_age">0.75</P>
+      <P Name="t_exp_age_unit">1</P>
+      <P Name="t_exp_age_conf">compiletime</P>
+      <P Name="i_specify">off</P>
+      <P Name="i_priority">None</P>
+      <P Name="i">0</P>
+      <P Name="i_unit">A</P>
+      <P Name="i_nominal_specify">off</P>
+      <P Name="i_nominal_unit">A</P>
+      <P Name="i_nominal_value">1</P>
+      <P Name="v_specify">off</P>
+      <P Name="v_priority">None</P>
+      <P Name="v">0</P>
+      <P Name="v_unit">V</P>
+      <P Name="v_nominal_specify">off</P>
+      <P Name="v_nominal_unit">V</P>
+      <P Name="v_nominal_value">1</P>
+      <P Name="charge_specify">off</P>
+      <P Name="charge_priority">High</P>
+      <P Name="charge">50</P>
+      <P Name="charge_unit">A*hr</P>
+      <P Name="charge_nominal_specify">off</P>
+      <P Name="charge_nominal_unit">A*hr</P>
+      <P Name="charge_nominal_value">1</P>
+      <P Name="num_cycles_specify">off</P>
+      <P Name="num_cycles_priority">High</P>
+      <P Name="num_cycles">0</P>
+      <P Name="num_cycles_unit">1</P>
+      <P Name="num_cycles_nominal_specify">off</P>
+      <P Name="num_cycles_nominal_unit">1</P>
+      <P Name="num_cycles_nominal_value">1</P>
+      <P Name="Tmeas">298.15</P>
+      <P Name="Tmeas_unit">K</P>
+      <P Name="Tmeas_conf">compiletime</P>
+      <P Name="Tmeas_age">298.15</P>
+      <P Name="Tmeas_age_unit">K</P>
+      <P Name="Tmeas_age_conf">compiletime</P>
+      <P Name="Vnom_T2">12</P>
+      <P Name="Vnom_T2_unit">V</P>
+      <P Name="Vnom_T2_conf">compiletime</P>
+      <P Name="R1_T2">2.2</P>
+      <P Name="R1_T2_unit">Ohm</P>
+      <P Name="R1_T2_conf">compiletime</P>
+      <P Name="R1_T2_dis">2.2</P>
+      <P Name="R1_T2_dis_unit">Ohm</P>
+      <P Name="R1_T2_dis_conf">compiletime</P>
+      <P Name="R1_T2_ch">2.2</P>
+      <P Name="R1_T2_ch_unit">Ohm</P>
+      <P Name="R1_T2_ch_conf">compiletime</P>
+      <P Name="V1_T2">11.4</P>
+      <P Name="V1_T2_unit">V</P>
+      <P Name="V1_T2_conf">compiletime</P>
+      <P Name="R2_T2">2200</P>
+      <P Name="R2_T2_unit">Ohm</P>
+      <P Name="R2_T2_conf">compiletime</P>
+      <P Name="Rp1_T2">0.005</P>
+      <P Name="Rp1_T2_unit">Ohm</P>
+      <P Name="Rp1_T2_conf">compiletime</P>
+      <P Name="tau1_T2">30</P>
+      <P Name="tau1_T2_unit">s</P>
+      <P Name="tau1_T2_conf">compiletime</P>
+      <P Name="Rp2_T2">0.005</P>
+      <P Name="Rp2_T2_unit">Ohm</P>
+      <P Name="Rp2_T2_conf">compiletime</P>
+      <P Name="tau2_T2">30</P>
+      <P Name="tau2_T2_unit">s</P>
+      <P Name="tau2_T2_conf">compiletime</P>
+      <P Name="Rp3_T2">0.005</P>
+      <P Name="Rp3_T2_unit">Ohm</P>
+      <P Name="Rp3_T2_conf">compiletime</P>
+      <P Name="tau3_T2">30</P>
+      <P Name="tau3_T2_unit">s</P>
+      <P Name="tau3_T2_conf">compiletime</P>
+      <P Name="Rp4_T2">0.005</P>
+      <P Name="Rp4_T2_unit">Ohm</P>
+      <P Name="Rp4_T2_conf">compiletime</P>
+      <P Name="tau4_T2">30</P>
+      <P Name="tau4_T2_unit">s</P>
+      <P Name="tau4_T2_conf">compiletime</P>
+      <P Name="Rp5_T2">0.005</P>
+      <P Name="Rp5_T2_unit">Ohm</P>
+      <P Name="Rp5_T2_conf">compiletime</P>
+      <P Name="tau5_T2">30</P>
+      <P Name="tau5_T2_unit">s</P>
+      <P Name="tau5_T2_conf">compiletime</P>
+      <P Name="Tmeas2">273.15</P>
+      <P Name="Tmeas2_unit">K</P>
+      <P Name="Tmeas2_conf">compiletime</P>
+      <P Name="thermal_mass">30000</P>
+      <P Name="thermal_mass_unit">J/K</P>
+      <P Name="thermal_mass_conf">compiletime</P>
+      <P Name="temperature_specify">off</P>
+      <P Name="temperature_priority">High</P>
+      <P Name="temperature">298.15</P>
+      <P Name="temperature_unit">K</P>
+      <P Name="temperature_nominal_specify">off</P>
+      <P Name="temperature_nominal_unit">K</P>
+      <P Name="temperature_nominal_value">1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="67">
+    <P Name="Position">[225, 20, 255, 50]</P>
+    <P Name="ZOrder">26201</P>
+  </Block>
+  <Block BlockType="Reference" Name="Controlled Current&#xA;Source" SID="49">
+    <PortCounts lconn="1" rconn="2"/>
+    <P Name="Position">[95, 130, 135, 170]</P>
+    <P Name="ZOrder">26183</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibraryVersion">10006000.1</P>
+    <P Name="SourceBlock">fl_lib/Electrical/Electrical Sources/Controlled Current
+Source</P>
+    <P Name="SourceType">Controlled Current
+Source</P>
+    <InstanceData>
+      <P Name="LogSimulationData">off</P>
+      <P Name="SourceFile">foundation.electrical.sources.controlled_current</P>
+      <P Name="InternalSimscapePortConfiguration">{&quot;Bottom&quot;:[],&quot;Left&quot;:[{&quot;id&quot;:&quot;head&quot;,&quot;label&quot;:&quot;&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Right&quot;:[{&quot;id&quot;:&quot;iT&quot;,&quot;label&quot;:&quot;&quot;,&quot;type&quot;:&quot;input&quot;},{&quot;id&quot;:&quot;tail&quot;,&quot;label&quot;:&quot;&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Top&quot;:[]}</P>
+      <P Name="SscBlockScalableBuild">off</P>
+      <P Name="ComponentPath">foundation.electrical.sources.controlled_current</P>
+      <P Name="ComponentVariants">[&quot;foundation.electrical.sources.controlled_current&quot;]</P>
+      <P Name="ComponentVariantNames">[&quot;controlled_current&quot;]</P>
+      <P Name="ClassName">controlled_current</P>
+      <P Name="SchemaVersion">1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Electrical Reference1" SID="48">
+    <PortCounts lconn="1"/>
+    <P Name="Position">[205, 205, 225, 225]</P>
+    <P Name="ZOrder">26182</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibraryVersion">10006000.1</P>
+    <P Name="SourceBlock">fl_lib/Electrical/Electrical Elements/Electrical Reference</P>
+    <P Name="SourceType">Electrical Reference</P>
+    <InstanceData>
+      <P Name="LogSimulationData">off</P>
+      <P Name="SourceFile">foundation.electrical.elements.reference</P>
+      <P Name="InternalSimscapePortConfiguration">{&quot;Bottom&quot;:[],&quot;Left&quot;:[{&quot;id&quot;:&quot;V&quot;,&quot;label&quot;:&quot;&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Right&quot;:[],&quot;Top&quot;:[]}</P>
+      <P Name="SscBlockScalableBuild">off</P>
+      <P Name="ComponentPath">foundation.electrical.elements.reference</P>
+      <P Name="ComponentVariants">[&quot;foundation.electrical.elements.reference&quot;]</P>
+      <P Name="ComponentVariantNames">[&quot;reference&quot;]</P>
+      <P Name="ClassName">reference</P>
+      <P Name="SchemaVersion">1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Gain" Name="Gain2" SID="64">
+    <P Name="Position">[225, 65, 255, 95]</P>
+    <P Name="ZOrder">26198</P>
+    <P Name="Gain">1/(3600*94)</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator1" SID="63">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[155, 65, 185, 95]</P>
+    <P Name="ZOrder">26197</P>
+  </Block>
+  <Block BlockType="Reference" Name="PS-Simulink&#xA;Converter1" SID="62">
+    <PortCounts out="1" lconn="1"/>
+    <P Name="Position">[110, 72, 125, 88]</P>
+    <P Name="ZOrder">26196</P>
+    <P Name="LibraryVersion">7.0</P>
+    <P Name="SourceBlock">nesl_utility/PS-Simulink
+Converter</P>
+    <P Name="SourceType">PS-Simulink
+Converter</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="PhysicalDomain">network_engine_domain</P>
+      <P Name="SubClassName">ps_output</P>
+      <P Name="LeftPortType">input</P>
+      <P Name="RightPortType">output</P>
+      <P Name="PseudoPeriodic">off</P>
+      <P Name="Frequencies">[]</P>
+      <P Name="VectorFormat">inherit</P>
+      <P Name="Unit">inherit</P>
+      <P Name="AffineConversion">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Sum" Name="Sum" SID="66">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[295, 70, 315, 90]</P>
+    <P Name="ZOrder">26200</P>
+    <P Name="Inputs">|+-</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="input" SID="88">
+    <P Name="Position">[20, 443, 50, 457]</P>
+    <P Name="ZOrder">26203</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="87">
+    <P Name="Position">[430, 73, 460, 87]</P>
+    <P Name="ZOrder">26202</P>
+  </Block>
+  <Line LineType="Connection">
+    <P Name="ZOrder">102</P>
+    <P Name="Src">49#lconn:1</P>
+    <P Name="Dst">51#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">103</P>
+    <P Name="Src">49#rconn:2</P>
+    <P Name="Points">[90, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">48#lconn:1</P>
+      <P Name="Points">[0, -5]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">51#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">138</P>
+    <P Name="Src">64#out:1</P>
+    <P Name="Points">[2, 0; 0, 27; 43, 0]</P>
+    <P Name="Dst">66#in:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">108</P>
+    <P Name="Src">49#rconn:1</P>
+    <P Name="Points">[0, -16; 0, 25]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[0, 256]</P>
+      <P Name="Dst">88#rconn:1</P>
+    </Branch>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">62#lconn:1</P>
+      <P Name="Points">[-26, 0; 0, 114; 36, 0]</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">139</P>
+    <P Name="Src">67#out:1</P>
+    <P Name="Points">[19, 0; 0, 45]</P>
+    <P Name="Dst">66#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">135</P>
+    <P Name="Src">63#out:1</P>
+    <P Name="Dst">64#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">134</P>
+    <P Name="Src">62#out:1</P>
+    <P Name="Dst">63#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">234</P>
+    <P Name="Src">66#out:1</P>
+    <P Name="Dst">87#in:1</P>
+  </Line>
+</System>

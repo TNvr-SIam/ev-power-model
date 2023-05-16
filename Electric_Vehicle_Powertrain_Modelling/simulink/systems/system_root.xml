@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1537, 865]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">92</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">100</P>
+  <Block BlockType="SubSystem" Name="Battery" SID="86">
+    <PortCounts out="1" lconn="1"/>
+    <P Name="Position">[680, 20, 790, 100]</P>
+    <P Name="ZOrder">26211</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_86"/>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="60">
+    <P Name="Position">[945, 120, 975, 150]</P>
+    <P Name="ZOrder">26194</P>
+    <P Name="Value">3600</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="30">
+    <P Name="Position">[40, 430, 70, 460]</P>
+    <P Name="ZOrder">26164</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Reference" Name="Current Sensor" SID="35">
+    <PortCounts lconn="1" rconn="2"/>
+    <P Name="Position">[615, 315, 655, 355]</P>
+    <P Name="ZOrder">26169</P>
+    <P Name="LibraryVersion">10006000.1</P>
+    <P Name="SourceBlock">fl_lib/Electrical/Electrical Sensors/Current Sensor</P>
+    <P Name="SourceType">Current Sensor</P>
+    <InstanceData>
+      <P Name="LogSimulationData">off</P>
+      <P Name="SourceFile">foundation.electrical.sensors.current</P>
+      <P Name="InternalSimscapePortConfiguration">{&quot;Bottom&quot;:[],&quot;Left&quot;:[{&quot;id&quot;:&quot;p&quot;,&quot;label&quot;:&quot;+&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Right&quot;:[{&quot;id&quot;:&quot;I&quot;,&quot;label&quot;:&quot;I&quot;,&quot;type&quot;:&quot;output&quot;},{&quot;id&quot;:&quot;n&quot;,&quot;label&quot;:&quot;-&quot;,&quot;type&quot;:&quot;foundation.electrical.electrical&quot;}],&quot;Top&quot;:[]}</P>
+      <P Name="SscBlockScalableBuild">off</P>
+      <P Name="ComponentPath">foundation.electrical.sensors.current</P>
+      <P Name="ComponentVariants">[&quot;foundation.electrical.sensors.current&quot;]</P>
+      <P Name="ComponentVariantNames">[&quot;current&quot;]</P>
+      <P Name="ClassName">current</P>
+      <P Name="SchemaVersion">1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Display" Name="Display" SID="69">
+    <PortCounts in="1"/>
+    <P Name="Position">[895, 45, 985, 75]</P>
+    <P Name="ZOrder">26203</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Distance" SID="61">
+    <PortCounts in="1"/>
+    <P Name="Position">[1110, 110, 1200, 140]</P>
+    <P Name="ZOrder">26195</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Product" Name="Divide" SID="59">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1030, 99, 1065, 146]</P>
+    <P Name="ZOrder">26193</P>
+    <P Name="Inputs">*/</P>
+  </Block>
+  <Block BlockType="Reference" Name="Driving Cycle" SID="29">
+    <PortCounts out="3"/>
+    <P Name="Position">[-60, 290, 50, 380]</P>
+    <P Name="ZOrder">26163</P>
+    <P Name="LibraryVersion">21.0</P>
+    <P Name="SourceBlock">drivingcycle_lib/Driving Cycle</P>
+    <P Name="SourceType">Driving Cycle</P>
+    <P Name="SourceProductName">Driving Cycle Blockset</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="CycleName">NEDC</P>
+      <P Name="CycleRepeatsForever">off</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">s (m)</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">v (m/s)</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">a (m/s^2)</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="56">
+    <P Name="Position">[760, 235, 790, 265]</P>
+    <P Name="ZOrder">26190</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">3.6</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="85">
+    <P Name="Position">[905, 185, 935, 215]</P>
+    <P Name="ZOrder">26210</P>
+    <P Name="Gain">3.6</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator" SID="58">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[880, 95, 910, 125]</P>
+    <P Name="ZOrder">26192</P>
+  </Block>
+  <Block BlockType="Reference" Name="Longitudinal Driver" SID="24">
+    <PortCounts in="3" out="3"/>
+    <P Name="Position">[140, 345, 335, 465]</P>
+    <P Name="ZOrder">5714</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibrarySourceBlock">autolibscenario/Longitudinal Driver</P>
+    <P Name="LibraryVersion">5.6</P>
+    <P Name="FontSize">12</P>
+    <P Name="SourceBlock">autolibshared/Longitudinal Driver</P>
+    <P Name="SourceType">Longitudinal Driver</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="extAccelOvr">off</P>
+      <P Name="extDecelOvr">off</P>
+      <P Name="extAccelHld">off</P>
+      <P Name="extDecelHld">off</P>
+      <P Name="extAccelZero">off</P>
+      <P Name="extDecelZero">off</P>
+      <P Name="cntrlType">PI</P>
+      <P Name="shftType">None</P>
+      <P Name="velUnits">m/s</P>
+      <P Name="gearOut">off</P>
+      <P Name="Kp">15</P>
+      <P Name="Ki">1</P>
+      <P Name="Kff">.05</P>
+      <P Name="Kg">.01</P>
+      <P Name="VehVelVec">[0 100]</P>
+      <P Name="KffVec">[.1 .1]</P>
+      <P Name="KpVec">[10 10]</P>
+      <P Name="KiVec">[5 5]</P>
+      <P Name="KgVec">[0 0]</P>
+      <P Name="m">1500</P>
+      <P Name="Kpt">3000</P>
+      <P Name="tau">.1</P>
+      <P Name="L">2</P>
+      <P Name="aR">200</P>
+      <P Name="bR">2.5</P>
+      <P Name="cR">.5</P>
+      <P Name="g">9.81</P>
+      <P Name="vnom">100</P>
+      <P Name="Kaw">.1</P>
+      <P Name="tauerr">.03</P>
+      <P Name="tauPt">2</P>
+      <P Name="GearInit">0</P>
+      <P Name="tShift">.1</P>
+      <P Name="pdlVec">[0.1 0.4 0.5 0.9]</P>
+      <P Name="upShftTbl">[-1 12.9375 26.4375 39.9375 51.18749999999999 62.4375 72.84375 83.25;-1 16.3125 29.8125 43.3125 54.5624 65.8125 76.78125 87.75;-1 19.6875 33.1875 46.68749999999999 57.9375 69.1875 80.71875 92.25;-1 33 52.5 77.25 100.5 138.75 161.875 185]</P>
+      <P Name="dwnShftTbl">[1 9.5625 23.0625 36.5625 47.8125 59.0625 68.90625 78.75;1 12.9375 26.4375 39.9375 51.18749999999999 62.4375 72.84375 83.25;1 16.3125 29.8125 43.3125 54.562499 65.8125 76.78125 87.75;1 19.6875 33.1875 46.68749999999999 57.9375 69.1875 80.71875 92.25]</P>
+      <P Name="tClutch">.5</P>
+      <P Name="tRev">.5</P>
+      <P Name="tPark">120</P>
+      <P Name="aMode">1</P>
+      <P Name="UpGearVec">[0  1  2  3  4  5  6  7]</P>
+      <P Name="DownGearVec">[1  2  3  4  5  6  7  8]</P>
+    </InstanceData>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">Accel</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">Decel</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="SubSystem" Name="Motor" SID="92">
+    <PortCounts lconn="2" rconn="1"/>
+    <P Name="Position">[685, 371, 810, 484]</P>
+    <P Name="ZOrder">26214</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_92"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Motor Control" SID="96">
+    <PortCounts lconn="1" rconn="3"/>
+    <P Name="Position">[425, 345, 565, 465]</P>
+    <P Name="ZOrder">26215</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_96"/>
+  </Block>
+  <Block BlockType="Reference" Name="PS-Simulink&#xA;Converter" SID="52">
+    <PortCounts out="1" lconn="1"/>
+    <P Name="Position">[855, 242, 870, 258]</P>
+    <P Name="ZOrder">26186</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="LibraryVersion">7.0</P>
+    <P Name="SourceBlock">nesl_utility/PS-Simulink
+Converter</P>
+    <P Name="SourceType">PS-Simulink
+Converter</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="PhysicalDomain">network_engine_domain</P>
+      <P Name="SubClassName">ps_output</P>
+      <P Name="LeftPortType">input</P>
+      <P Name="RightPortType">output</P>
+      <P Name="PseudoPeriodic">off</P>
+      <P Name="Frequencies">[]</P>
+      <P Name="VectorFormat">inherit</P>
+      <P Name="Unit">inherit</P>
+      <P Name="AffineConversion">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Scope" Name="SOC" SID="68">
+    <PortCounts in="1"/>
+    <P Name="Position">[900, -11, 930, 21]</P>
+    <P Name="ZOrder">26202</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;0.55048&apos;,&apos;MaxYLimReal&apos;,&apos;1.04995&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.55048&apos;,&apos;MaxYLimMag&apos;,&apos;1.04995&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Sum&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;0.55048&apos;,&apos;MaxYLimReal&apos;,&apos;1.04995&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.55048&apos;,&apos;MaxYLimMag&apos;,&apos;1.04995&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2022b&apos;)),&apos;Version&apos;,&apos;2022b&apos;)</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Simulink-PS&#xA;Converter" SID="45">
+    <PortCounts in="1" rconn="1"/>
+    <P Name="Position">[375, 397, 390, 413]</P>
+    <P Name="ZOrder">26179</P>
+    <P Name="LibraryVersion">7.0</P>
+    <P Name="SourceBlock">nesl_utility/Simulink-PS
+Converter</P>
+    <P Name="SourceType">Simulink-PS
+Converter</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="PhysicalDomain">network_engine_domain</P>
+      <P Name="SubClassName">ps_input</P>
+      <P Name="LeftPortType">input</P>
+      <P Name="RightPortType">output</P>
+      <P Name="PseudoPeriodic">off</P>
+      <P Name="Frequencies">[]</P>
+      <P Name="NoiseDistribution">none</P>
+      <P Name="NoiseParameters">[]</P>
+      <P Name="Unit">1</P>
+      <P Name="AffineConversion">off</P>
+      <P Name="FilteringAndDerivatives">provide</P>
+      <P Name="SimscapeFilterOrder">1</P>
+      <P Name="InputFilterTimeConstant">0.001</P>
+      <P Name="UdotUserProvided">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Simulink-PS&#xA;Converter1" SID="46">
+    <PortCounts in="1" rconn="1"/>
+    <P Name="Position">[375, 437, 390, 453]</P>
+    <P Name="ZOrder">26180</P>
+    <P Name="LibraryVersion">7.0</P>
+    <P Name="SourceBlock">nesl_utility/Simulink-PS
+Converter</P>
+    <P Name="SourceType">Simulink-PS
+Converter</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="PhysicalDomain">network_engine_domain</P>
+      <P Name="SubClassName">ps_input</P>
+      <P Name="LeftPortType">input</P>
+      <P Name="RightPortType">output</P>
+      <P Name="PseudoPeriodic">off</P>
+      <P Name="Frequencies">[]</P>
+      <P Name="NoiseDistribution">none</P>
+      <P Name="NoiseParameters">[]</P>
+      <P Name="Unit">1</P>
+      <P Name="AffineConversion">off</P>
+      <P Name="FilteringAndDerivatives">provide</P>
+      <P Name="SimscapeFilterOrder">1</P>
+      <P Name="InputFilterTimeConstant">0.001</P>
+      <P Name="UdotUserProvided">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="Vehicle Body" SID="89">
+    <PortCounts lconn="2"/>
+    <P Name="Position">[925, 284, 1065, 451]</P>
+    <P Name="ZOrder">26212</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_89"/>
+  </Block>
+  <Block BlockType="Scope" Name="Velocity" SID="54">
+    <PortCounts in="2"/>
+    <P Name="Position">[980, 161, 1010, 214]</P>
+    <P Name="ZOrder">26188</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData1&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-2.65972&apos;,&apos;MaxYLimReal&apos;,&apos;23.9375&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;23.9375&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Driving Cycle/v (m/s)&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1),struct(&apos;MinYLimReal&apos;,&apos;-172.02169&apos;,&apos;MaxYLimReal&apos;,&apos;19.11992&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;174.45152&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Gain1&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,2)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;YLabelReal&apos;,&apos;&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),&apos;DisplayLayoutDimensions&apos;,[2 1]),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2022b&apos;)),&apos;Version&apos;,&apos;2022b&apos;)</P>
+    <P Name="NumInputPorts">2</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">43</P>
+    <P Name="Src">30#out:1</P>
+    <P Name="Dst">24#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">79</P>
+    <P Name="Src">24#out:3</P>
+    <P Name="Dst">46#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">80</P>
+    <P Name="Src">24#out:2</P>
+    <P Name="Dst">45#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">42</P>
+    <P Name="Src">29#out:2</P>
+    <P Name="Points">[39, 0]</P>
+    <Branch>
+      <P Name="ZOrder">260</P>
+      <P Name="Points">[0, -160]</P>
+      <P Name="Dst">54#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">118</P>
+      <P Name="Points">[0, 30]</P>
+      <P Name="Dst">24#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">119</P>
+    <P Name="Src">56#out:1</P>
+    <P Name="Points">[-639, 0; 0, 155]</P>
+    <P Name="Dst">24#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">111</P>
+    <P Name="Src">52#out:1</P>
+    <P Name="Points">[-21, 0]</P>
+    <Branch>
+      <P Name="ZOrder">303</P>
+      <P Name="Dst">56#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">300</P>
+      <P Name="Points">[0, -50]</P>
+      <Branch>
+        <P Name="ZOrder">304</P>
+        <P Name="Points">[0, -90]</P>
+        <P Name="Dst">58#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">301</P>
+        <P Name="Dst">85#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">126</P>
+    <P Name="Src">58#out:1</P>
+    <P Name="Dst">59#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">127</P>
+    <P Name="Src">60#out:1</P>
+    <P Name="Dst">59#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">128</P>
+    <P Name="Src">59#out:1</P>
+    <P Name="Dst">61#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">265</P>
+    <P Name="Src">85#out:1</P>
+    <P Name="Dst">54#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">280</P>
+    <P Name="Src">86#out:1</P>
+    <P Name="Points">[76, 0]</P>
+    <Branch>
+      <P Name="ZOrder">306</P>
+      <P Name="Points">[0, -55]</P>
+      <P Name="Dst">68#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">285</P>
+      <P Name="Dst">69#in:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">281</P>
+    <P Name="Src">86#lconn:1</P>
+    <P Name="Points">[-2, 0; 0, 265]</P>
+    <P Name="Dst">35#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">288</P>
+    <P Name="Src">89#lconn:1</P>
+    <P Name="Points">[-10, 0; 0, -75]</P>
+    <P Name="Dst">52#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">290</P>
+    <P Name="Src">92#lconn:1</P>
+    <P Name="Dst">35#rconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">291</P>
+    <P Name="Src">89#lconn:2</P>
+    <P Name="Points">[-30, 0; 0, 123; -217, 0; 0, -78]</P>
+    <P Name="Dst">92#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">293</P>
+    <P Name="Src">96#rconn:1</P>
+    <P Name="Points">[-9, 0; 0, -57; 168, 0; 0, 27]</P>
+    <P Name="Dst">35#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">294</P>
+    <P Name="Src">45#rconn:1</P>
+    <P Name="Dst">96#rconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">295</P>
+    <P Name="Src">46#rconn:1</P>
+    <P Name="Dst">96#rconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">296</P>
+    <P Name="Src">96#lconn:1</P>
+    <P Name="Points">[38, 0; 0, -42; 216, 0; 0, 67]</P>
+    <P Name="Dst">92#rconn:1</P>
+  </Line>
+</System>

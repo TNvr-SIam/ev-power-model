@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2022b_202203181006">
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="7bd73a50-b869-48c3-8a44-6397a5025663">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="a6705287-58f7-4fc0-811f-3645d26e0285">
+      <children type="sltp.mm.syntax.Node" uuid="e649a621-0fa8-47ef-a719-8a6c31988b34">
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#000000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0</rate>
+          <title>Cont</title>
+        </rates>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#808080</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>[0, 1]</rate>
+          <title>FiM</title>
+        </rates>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#e60000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>1</rate>
+          <title>D1</title>
+        </rates>
+        <title>Cont</title>
+        <type>base</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="fcf6930d-4b87-47e2-b427-e22e22dad409"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="698d24d0-1138-4814-8e33-679b9c7ae377">
+          <title>Cont</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="2a038861-b1c8-42cf-b0d7-b5f205221bdb"/>
+        </subgraph>
+      </children>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="5e301af8-12d3-4d55-a986-bcc58819d9d5"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="5e301af8-12d3-4d55-a986-bcc58819d9d5">
+    <entities type="diagram.editor.model.Entity" uuid="fcf6930d-4b87-47e2-b427-e22e22dad409">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="e649a621-0fa8-47ef-a719-8a6c31988b34"/>
+      <title>Cont</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="2a038861-b1c8-42cf-b0d7-b5f205221bdb">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="698d24d0-1138-4814-8e33-679b9c7ae377"/>
+        <title>Cont</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="a6705287-58f7-4fc0-811f-3645d26e0285"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+</sltp_editor>
